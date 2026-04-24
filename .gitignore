@@ -1,0 +1,7 @@
+venv/
+listings.csv
+listings_clean.csv
+listings_features.csv
+__pycache__/
+*.pkl
+.DS_Store
