@@ -1,7 +1,6 @@
 venv/
-listings.csv
 listings_clean.csv
 listings_features.csv
 __pycache__/
-*.pkl
+model.pkl
 .DS_Store
