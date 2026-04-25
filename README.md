@@ -2,7 +2,7 @@
 
 A multimodal machine learning system that predicts the quality score of an Airbnb listing based on tabular, and NLP features — with SHAP-powered explainability showing exactly what drives each prediction.
 
-🔗 **[Live Demo](https://m2felix-airbnb-quality-scorer.streamlit.app)**
+🔗 **[Live Demo](https://airbnb-quality-scorer.streamlit.app)**
 
 ---
 
