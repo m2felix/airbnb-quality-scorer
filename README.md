@@ -55,6 +55,7 @@ streamlit run app.py
 ---
 
 ## What I'd add next
-- Ran CLIP image embedding experiments — found data alignment and sample size   limitations reduced effectiveness; next step is proper alignment across the full dataset
+- Ran CLIP image embedding experiments — found data alignment and sample size
+   limitations reduced effectiveness; next step is proper alignment across the full dataset
 - More cities for generalization
 - Better model with hyperparameter tuning
