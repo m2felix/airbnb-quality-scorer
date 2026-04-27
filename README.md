@@ -30,6 +30,8 @@ Most rating predictors are black boxes. This one uses SHAP values to surface *wh
 - `host_is_superhost` was the single most predictive feature
 - Host listing count and number of reviews followed closely
 - NLP features from listing descriptions contributed meaningfully to predictions
+- Ran CLIP image embedding experiments — found data alignment and sample size
+  limitations reduced effectiveness; next step is proper alignment across the full dataset
 
 ---
 
@@ -37,6 +39,8 @@ Most rating predictors are black boxes. This one uses SHAP values to surface *wh
 - Python, pandas, numpy
 - scikit-learn, XGBoost
 - SHAP
+- CLIP (OpenAI) via HuggingFace Transformers
+- PyTorch, torchvision, Pillow
 - Streamlit
 - Inside Airbnb dataset
 
@@ -53,9 +57,3 @@ streamlit run app.py
 ```
 
 ---
-
-## What I'd add next
-- Ran CLIP image embedding experiments — found data alignment and sample size
-   limitations reduced effectiveness; next step is proper alignment across the full dataset
-- More cities for generalization
-- Better model with hyperparameter tuning

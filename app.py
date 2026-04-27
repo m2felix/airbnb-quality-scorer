@@ -67,7 +67,7 @@ def load_model_and_data():
     X = df_final.drop(columns=['review_scores_rating'])
     y = df_final['review_scores_rating']
 
-    model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
+    model = RandomForestRegressor(n_estimators=300, max_depth=30, min_samples_leaf=4, max_features='sqrt', random_state=42, n_jobs=-1)
     model.fit(X, y)
 
     return model, X, y, tfidf
@@ -76,6 +76,7 @@ def load_model_and_data():
 st.set_page_config(page_title="Airbnb Listing Quality Scorer", page_icon="🏠")
 st.title("🏠 Airbnb Listing Quality Scorer")
 st.markdown("Predict how well your listing will be rated based on its features.")
+st.info("📊 Note: Airbnb ratings naturally skew high (most listings score 4.5–5.0), so predictions will reflect this distribution.")
 
 with st.spinner("Loading model... this takes about 30 seconds on first load."):
     model, X, y, tfidf = load_model_and_data()

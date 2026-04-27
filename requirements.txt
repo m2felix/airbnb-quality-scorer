@@ -7,3 +7,8 @@ matplotlib
 streamlit
 joblib
 sentence-transformers
+torch
+torchvision
+transformers
+Pillow
+requests
